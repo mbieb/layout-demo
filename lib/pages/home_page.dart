@@ -49,14 +49,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 ],
               ),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 30),
             //discover text
             Container(
               margin: const EdgeInsets.only(left: 20),
               child: AppLargeText(text: 'Discover'),
             ),
             SizedBox(
-              height: 30,
+              height: 20,
             ),
             //tabbar
             Container(
@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               height: 10,
             ),
             Container(
-              height: 100,
+              height: 120,
               width: double.infinity,
               margin: const EdgeInsets.only(left: 20),
               child: ListView.builder(
@@ -154,6 +154,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                       'assets/images/${explores[index]['image']}'),
                                   fit: BoxFit.cover),
                             ),
+                          ),
+                          SizedBox(
+                            height: 10,
                           ),
                           Container(
                             child: AppText(
